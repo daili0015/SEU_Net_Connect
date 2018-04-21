@@ -10,9 +10,8 @@ password_str = "密码"
 
 class Login:
     def login(self):
-        driver = webdriver.Chrome()
         try:
-            driver = webdriver.Chrome()
+            driver = webdriver.Firefox()
             driver.get("https://w.seu.edu.cn/")
             time.sleep(3)
             username_input = driver.find_element_by_id("username")
